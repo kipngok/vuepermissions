@@ -56,6 +56,11 @@ class CategoryController extends Controller
     public function show(Category $category)
     {
         //
+        $this->authorize('show' Category::class);
+        $category=Category::find($id);
+        return view('category.show' compact('category'));
+        // SAM updated show()
+        
     }
 
     /**
@@ -67,6 +72,11 @@ class CategoryController extends Controller
     public function edit(Category $category)
     {
         //
+         $this->authorize('edit' Category::class);
+        return view('category.edit'compact('category'));
+
+        // SAM updated edit()
+       
     }
 
     /**
@@ -79,6 +89,11 @@ class CategoryController extends Controller
     public function update(Request $request, Category $category)
     {
         //
+        $category=Category::find($id);
+        $input=$request->all();
+        $category->update($input);
+        return redirect('/category'.$category_id);
+        // SAM updated update()
     }
 
     /**
