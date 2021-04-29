@@ -18,6 +18,17 @@
 				<input type="text" name="id_no" class="form-control">
 			</div>
 		
+ 			<x-input
+    		name="id_no"
+    		type="text"
+    		placeholder="Id no"
+    		required
+    		:label="[
+        'text' => 'ID No',
+    			]"
+  		/>
+
+
 			<div class="form-group">
 				<button type="submit" class="btn btn-sm btn-success">Save</button>
 			</div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use AfricasTalking\SDK\AfricasTalking;
+
 use App\Models\Sms;
 use Illuminate\Http\Request;
 
@@ -18,6 +19,9 @@ class SmsController extends Controller
         $smses= Sms::all();
         return view('sms.index',compact('smses'));
     }
+
+
+
     public function sendSMS($smses,$message)
     {
 

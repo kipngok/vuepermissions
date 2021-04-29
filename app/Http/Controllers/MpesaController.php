@@ -79,20 +79,6 @@ class MpesaController extends Controller
         return $curl_response;
     }
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     /**
