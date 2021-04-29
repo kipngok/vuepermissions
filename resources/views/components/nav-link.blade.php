@@ -53,13 +53,13 @@
                          Roles
                       </a>
                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        @can('View Role') 
+                       
                         <li><a class="dropdown-item" href="/role">Roles</a></li> 
-                        @endcan
-                         @can('Create Role')
+                     
+                        
 
                        <li><a class="dropdown-item" href="/role/create">Add role</a></li>
-                      @endcan
+                     
                      </ul>
                     </li>
                        <li class="nav-item dropdown">
